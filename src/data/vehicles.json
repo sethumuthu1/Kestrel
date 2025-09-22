@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Truck 101", "type": "Trash", "lat": 29.044, "lng": -95.416, "lastSeen": "2025-09-19 10:14", "online": true, "color": "blue" },
+  { "id": 2, "name": "Truck 202", "type": "Recycling", "lat": 29.058, "lng": -95.425, "lastSeen": "2025-09-19 10:10", "online": true, "color": "green" },
+  { "id": 3, "name": "Sweeper 303", "type": "Heavy Trash", "lat": 29.034, "lng": -95.408, "lastSeen": "2025-09-19 09:50", "online": false, "color": "purple" },
+  { "id": 4, "name": "Truck 404", "type": "Trash", "lat": 29.062, "lng": -95.400, "lastSeen": "2025-09-19 10:02", "online": true, "color": "blue" }
+]

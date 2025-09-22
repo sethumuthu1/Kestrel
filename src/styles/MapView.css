@@ -1,0 +1,133 @@
+
+/* Map wrapper */
+.map-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 10px;
+}
+
+/* Header above the map */
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f3c88;
+  color: white;
+  padding: 10px 16px;
+}
+.map-header h2 {
+  font-size: 16px;
+  margin: 0;
+}
+.map-actions button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  background: white;
+  color: #1f3c88;
+  transition: background 0.2s;
+}
+.map-actions button:hover {
+  background: #e5e7eb;
+}
+
+/* Map view */
+.map-view {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+/* ========================= */
+/* Responsive Map Styles     */
+/* ========================= */
+
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .map-header {
+    padding: 8px 12px;
+  }
+  .map-header h2 {
+    font-size: 15px;
+  }
+  .map-actions button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .map-wrapper {
+    margin: 6px;
+    border-radius: 10px;
+  }
+  .map-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 10px;
+  }
+  .map-header h2 {
+    font-size: 14px;
+  }
+  .map-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .map-actions button {
+    flex: 1; /* buttons take equal width */
+    min-width: 100px;
+    font-size: 12px;
+  }
+  .map-view {
+    min-height: 400px; /* ensure map has enough height */
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .map-wrapper {
+    margin: 4px;
+    border-radius: 8px;
+  }
+  .map-header {
+    padding: 6px 8px;
+    gap: 4px;
+  }
+  .map-header h2 {
+    font-size: 13px;
+  }
+  .map-actions {
+    gap: 4px;
+  }
+  .map-actions button {
+    padding: 5px 8px;
+    font-size: 11px;
+    min-width: auto;
+  }
+  .map-view {
+    min-height: 300px;
+  }
+}
+
+
+
+
+
+
+
